@@ -1,0 +1,96 @@
+filetype off
+
+if has('vim_starting')
+  set runtimepath+=~/.vim/bundle/neobundle.vim
+
+  call neobundle#begin(expand('~/.vim/bundle/'))
+  NeoBundleFetch 'Shougo/neobundle.vim'
+  call neobundle#end()
+endif
+
+NeoBundleFetch "Shougo/neobundle.vim"
+
+NeoBundle 'jeffreyiacono/vim-colors-wombat'
+
+NeoBundle 'tomasr/molokai'
+
+NeoBundle 'scrooloose/nerdcommenter.git'
+
+NeoBundle 'bling/vim-airline'
+
+NeoBundle 'airblade/vim-gitgutter'
+
+NeoBundle 'tpope/vim-fugitive'
+
+NeoBundle 'nathanaelkane/vim-indent-guides'
+
+NeoBundle 'mattn/emmet-vim'
+
+NeoBundle 'Shougo/neocomplcache.vim'
+
+NeoBundle 'Shougo/neosnippet'
+
+NeoBundle 'Shougo/neosnippet-snippets'
+
+NeoBundle 'Shougo/unite.vim'
+
+NeoBundle 'Shougo/neomru.vim'
+
+NeoBundle 'basyura/unite-rails'
+
+NeoBundle 'tpope/vim-rails'
+
+NeoBundle 'scrooloose/syntastic'
+
+NeoBundle 'scrooloose/nerdtree'
+
+NeoBundle 'operator-user'
+
+NeoBundle 'operator-replace'
+
+" textobj-user : 簡単にVimエディタのテキストオブジェクトをつくれる
+NeoBundle 'kana/vim-textobj-user'
+
+" vim-textobj-syntax : syntax hilightされたものをtext-objectに
+NeoBundle 'kana/vim-textobj-syntax.git'
+
+" vim-textobj-plugins : いろんなものをtext-objectにする
+NeoBundle 'thinca/vim-textobj-plugins.git'
+
+" vim-textobj-lastpat : 最後に検索されたパターンをtext-objectに
+NeoBundle 'kana/vim-textobj-lastpat.git'
+
+" vim-textobj-indent : インデントされたものをtext-objectに
+NeoBundle 'kana/vim-textobj-indent.git'
+
+" vim-textobj-function : 関数の中身をtext-objectに
+NeoBundle 'kana/vim-textobj-function.git'
+
+" vim-textobj-fold : 折りたたまれたアレをtext-objectに
+" NeoBundle 'kana/vim-textobj-fold.git'
+NeoBundle 'textobj-rubyblock'
+
+" vim-textobj-entire : buffer全体をtext-objectに
+NeoBundle 'textobj-entire'
+
+" 「foo」 or 【bar】などをtext-objectに
+NeoBundle 'textobj-jabraces'
+
+NeoBundle 'vim-ruby/vim-ruby'
+
+" JavaScript
+NeoBundle 'JavaScript-syntax'
+
+" jQuery
+NeoBundle 'jQuery'
+
+" nginx conf
+NeoBundle 'nginx.vim'
+
+" markdown
+NeoBundle 'tpope/vim-markdown'
+
+" coffee script
+NeoBundle 'kchmck/vim-coffee-script'
+
+NeoBundle 'idanarye/vim-merginal'

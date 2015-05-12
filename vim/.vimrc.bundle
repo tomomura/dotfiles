@@ -93,4 +93,7 @@ NeoBundle 'tpope/vim-markdown'
 " coffee script
 NeoBundle 'kchmck/vim-coffee-script'
 
+" scala
+NeoBundle 'derekwyatt/vim-scala'
+
 NeoBundle 'idanarye/vim-merginal'

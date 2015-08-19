@@ -11,7 +11,7 @@
 [push]
   default = upstream # defaultのpush先はtrackingしているリポジトリ
 [core]
-  excludesfile = ~/.gitignore  # globalな.gitignoreの指定
+	excludesfile = /Users/ryota/.gitignore
   autocrlf = input                 # CRLFを自動変換
   editor = vim
   quotepath = false
@@ -23,9 +23,9 @@
 [pull]
   rebase = true
 [pager]
-  log = diff-highlight | less
-  show = diff-highlight | less
-  diff = diff-highlight | less
+  ;log = diff-highlight | less
+  ;show = diff-highlight | less
+  ;diff = diff-highlight | less
 [alias]
   s   = status
   st  = status
@@ -175,3 +175,9 @@
   generic = G move-last-line
   generic = ^F move-page-down
   generic = ^B move-page-up
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path =
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true

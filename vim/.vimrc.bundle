@@ -16,7 +16,9 @@ NeoBundle 'tomasr/molokai'
 
 NeoBundle 'scrooloose/nerdcommenter.git'
 
-NeoBundle 'bling/vim-airline'
+NeoBundle 'vim-airline/vim-airline'
+
+NeoBundle 'vim-airline/vim-airline-themes.git'
 
 NeoBundle 'airblade/vim-gitgutter'
 
